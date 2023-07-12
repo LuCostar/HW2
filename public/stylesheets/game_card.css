@@ -1,0 +1,125 @@
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh;
+    padding: 0px 5%;
+}
+
+.card{
+    width: calc(25%);
+    height: calc(width - 25%);
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 1%;
+    background-color: paleturquoise;
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img{
+    border: 1px solid #dcdcdc;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.saveForm{
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    padding: 0px 15px 10px 15px;
+    align-items: flex-end;
+}
+
+
+.save{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    background: url('../assets/heart.png') 10px 12px no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    cursor: pointer;
+}
+
+.save:hover{
+    background: url('../assets/pink_heart.png') 10px 12px no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+}
+
+.saved{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+    color: rgba(255, 55, 255, 0);
+    border: none;
+    background: url('../assets/pink_heart.png') 10px 12px no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    cursor: pointer;
+}
+
+.delete{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: none;
+    opacity: 0.5;
+    background: url('../assets/remove.png') 10px 12px no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    opacity: 1;
+}
+
+.high_score{
+    color:rgb(26, 169, 26);
+}
+
+.mid_score{
+    color:rgb(183, 156, 2);
+}
+
+.low_score{
+    color:rgb(192, 29, 29);
+}
+
+
+@media (max-width: 1000px){
+    .card{
+        width: calc(47%);
+    }
+
+}
+
+@media (max-width: 550px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+
+}
